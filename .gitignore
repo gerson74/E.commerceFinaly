@@ -1,0 +1,9 @@
+# Archivos temporales de Visual Studio 
+.vs/ 
+*.vscode/ 
+*.user 
+*.suo 
+bin/ 
+obj/ 
+/wwwroot/lib/ 
+/node_modules/ 

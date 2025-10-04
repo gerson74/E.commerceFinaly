@@ -1,20 +1,81 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Inicio - Géraud";
 }
-<link href="/src/style.css" rel="stylesheet">
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 
-<div class="grid grid-cols-3 gap-4 ...">
-  <div>01</div>
-  <div class="place-self-auto ...">02</div>
-  <div>03</div>
-  <div>04</div>
-  <div>05</div>
-  <div>06</div>
-</div>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-</div>
+<!-- Hero con carrusel de fondo -->
+<!-- Hero con carrusel de fondo -->
+<section class="position-relative">
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" style="height: 80vh;">
+            <div class="carousel-item active">
+                <img src="~/images/hero.png" class="d-block w-100 h-100 object-fit-cover" alt="Imagen 1">
+            </div>
+            <div class="carousel-item">
+                <img src="~/images/hero2.png" class="d-block w-100 h-100 object-fit-cover" alt="Imagen 2">
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay degradado -->
+    <div class="position-absolute bottom-0 start-0 w-100"
+         style="height: 200px; background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, #000 100%);">
+    </div>
+
+    <!-- Texto encima del carrusel -->
+    <div class="position-absolute top-50 start-50 translate-middle text-center text-light">
+        <h1 class="display-3 fw-bold">Bienvenido a <span class="text-warning">Géraud</span></h1>
+        <p class="lead">Elegancia, innovación y exclusividad en un solo lugar.</p>
+        <a href="#productos" class="btn btn-warning btn-lg mt-3">Explorar</a>
+    </div>
+</section>
+
+
+
+
+<!-- Sección de Productos / Categorías -->
+<section id="productos" class="py-5 bg-black text-light">
+    <div class="container">
+        <h2 class="text-center mb-5 fw-bold">Nuestros Productos</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card bg-dark text-light h-100 shadow">
+                    <img src="~/images/producto1.jpg" class="card-img-top fixed-img" alt="Producto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Producto Exclusivo</h5>
+                        <p class="card-text">Diseño elegante para quienes buscan lo mejor.</p>
+                        <a href="#" class="btn btn-outline-warning">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark text-light h-100 shadow">
+                    <img src="~/images/producto2.png" class="card-img-top fixed-img" alt="Producto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Edición Limitada</h5>
+                        <p class="card-text">Un toque de distinción y lujo exclusivo.</p>
+                        <a href="#" class="btn btn-outline-warning">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark text-light h-100 shadow">
+                    <img src="~/images/producto3.png" class="card-img-top fixed-img" alt="Producto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Clásicos Modernos</h5>
+                        <p class="card-text">Elegancia atemporal para cada ocasión.</p>
+                        <a href="#" class="btn btn-outline-warning">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Final Call to Action -->
+<section class="py-5 text-center bg-black text-light">
+    <div class="container">
+        <h2 class="fw-bold">Descubre el mundo de <span class="text-warning">Géraud</span></h2>
+        <p class="lead">Un estilo que marca la diferencia</p>
+        <a href="#" class="btn btn-warning btn-lg">Contáctanos</a>
+    </div>
+</section>

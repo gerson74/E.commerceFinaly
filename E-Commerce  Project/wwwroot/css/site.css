@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 html {
   font-size: 14px;
@@ -19,4 +17,10 @@ html {
 
 body {
   margin-bottom: 60px;
+}
+.fixed-img {
+    height: 300px; /* todas las imágenes tendrán la misma altura */
+    object-fit: cover; /* recorta proporcionalmente sin deformar */
+    width: 100%; /* ocupa todo el ancho de la card */
+    border-radius: 8px 8px 0 0; /* opcional para bordes redondeados arriba */
 }

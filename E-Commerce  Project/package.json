@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build:css": "npx tailwindcss -i ./wwwroot/css/site.css -o ./wwwroot/css/Output.css --minify"
+    "build:css":;
   },
   "author": "",
   "license": "ISC",
